@@ -31,3 +31,5 @@ jobs:
       run: bundle install
     - name: Run tests
       run: bundle exec rake lint spec
+      env:
+        SLACK_WEBHOOK: https://hooks.slack.com/services/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 
