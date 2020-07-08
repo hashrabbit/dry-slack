@@ -10,3 +10,4 @@ Gemfile.lock
 .ruby-gemset
 doc
 .yardoc/
+.env

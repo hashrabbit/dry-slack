@@ -8,6 +8,9 @@ AllCops:
   Exclude:
     - "*.gemspec"
 
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: false
+
 Layout/SpaceAroundMethodCallOperator:
   Enabled: false
 
@@ -23,7 +26,7 @@ Layout/FirstArrayElementIndentation:
 
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
-  EnforcedStyle: no_space
+  EnforcedStyle: space
   EnforcedStyleForEmptyBraces: no_space
 
 Layout/LineLength:
@@ -32,6 +35,12 @@ Layout/LineLength:
     - "spec/**/*_spec.rb"
 
 Lint/BooleanSymbol:
+  Enabled: false
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: false
+
+Lint/MixedRegexpCaptureTypes:
   Enabled: false
 
 Lint/RaiseException:
@@ -88,11 +97,17 @@ Style/HashTransformValues:
 Style/AccessModifierDeclarations:
   Enabled: false
 
+Style/AccessorGrouping:
+  Enabled: false
+
 Style/Alias:
   Enabled: true
   EnforcedStyle: prefer_alias_method
 
 Style/AsciiComments:
+  Enabled: false
+
+Style/BisectedAttrAccessor:
   Enabled: false
 
 Style/BlockDelimiters:
@@ -130,6 +145,21 @@ Style/LambdaCall:
   Enabled: false
 
 Style/ParallelAssignment:
+  Enabled: false
+
+Style/RedundantAssignment:
+  Enabled: false
+
+Style/RedundantFetchBlock:
+  Enabled: false
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: false
+
+Style/RedundantRegexpEscape:
+  Enabled: false
+
+Style/SlicingWithRange:
   Enabled: false
 
 Style/StabbyLambdaParentheses:
