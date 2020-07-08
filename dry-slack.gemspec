@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency 'dry-matcher', '~> 0.8.3'
   spec.add_runtime_dependency 'dry-monads', '~> 1.3.5'
   spec.add_runtime_dependency 'dry-struct', '~> 1.3.0'
   spec.add_runtime_dependency 'dry-validation', '~> 1.5.1'
@@ -39,4 +40,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.9.0'
   spec.add_development_dependency 'rubocop', '~> 0.87.0'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.41.0'
+  spec.add_development_dependency 'webmock', '~> 3.8.3'
 end
