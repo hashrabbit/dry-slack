@@ -1,0 +1,12 @@
+.DS_Store
+coverage
+/.bundle
+vendor/bundle
+log/
+tmp/
+.idea/
+Gemfile.lock
+*.gem
+.ruby-gemset
+doc
+.yardoc/
