@@ -38,6 +38,8 @@ module Dry
   end
 end
 
+require 'dry/do_service'
+
 require 'dry/slack/blocks'
 require 'dry/slack/contracts'
 require 'dry/slack/payloads'
