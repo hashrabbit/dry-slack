@@ -7,6 +7,7 @@ require 'webmock/rspec'
 
 require 'dry-slack'
 require 'fixtures'
+require 'support/request_stub'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
