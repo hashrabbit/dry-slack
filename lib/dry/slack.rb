@@ -30,6 +30,7 @@ module Dry
       UrlString = String.constrained(max_size: 3000)
       AltString = String.constrained(max_size: 2000)
       DateString = String.constructor { |v| ::Date.parse(v.to_s).to_s }
+      TimeString = Time.constructor { |v| ::Time.at(v.to_i) }
 
       def self.type_string(def_pos, *vals)
         String.default(vals[def_pos].freeze).enum(*vals)
@@ -42,7 +43,7 @@ require 'dry/do_service'
 
 require 'dry/slack/blocks'
 require 'dry/slack/contracts'
+require 'dry/slack/mentions'
 require 'dry/slack/payloads'
-
 require 'dry/slack/post_json'
 require 'dry/slack/publish_webhook'

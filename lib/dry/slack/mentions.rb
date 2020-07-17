@@ -22,3 +22,8 @@ module Dry
   end
 end
 
+require 'dry/slack/mentions/compute_signature'
+require 'dry/slack/mentions/handler'
+require 'dry/slack/mentions/parse_request'
+require 'dry/slack/mentions/request_struct'
+require 'dry/slack/mentions/verify_signature'
