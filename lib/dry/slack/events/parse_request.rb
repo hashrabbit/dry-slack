@@ -2,7 +2,7 @@
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       class ParseRequest
         extend Dry::Initializer
         include DoService

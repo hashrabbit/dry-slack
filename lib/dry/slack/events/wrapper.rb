@@ -2,8 +2,8 @@
 
 module Dry
   module Slack
-    module Mentions
-      class EventCallback < EventStruct
+    module Events
+      class Wrapper < BaseStruct
         attribute :type, Types::String.constrained(eql: 'event_callback')
         attribute :event_id, Types::FilledString
         attribute :event_time, Types::TimeString

@@ -2,8 +2,8 @@
 
 module Dry
   module Slack
-    module Mentions
-      class Error < EventStruct
+    module Events
+      class Error < BaseStruct
         include Dry::Monads[:result]
 
         attribute :code, Types::Integer.enum(400, 403, 405)

@@ -2,7 +2,7 @@
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       class Handler
         include DoService
         extend Dry::Initializer

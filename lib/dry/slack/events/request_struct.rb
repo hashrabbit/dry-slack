@@ -2,8 +2,8 @@
 
 module Dry
   module Slack
-    module Mentions
-      class RequestStruct < EventStruct
+    module Events
+      class RequestStruct < BaseStruct
         attribute :timestamp, Types::Coercible::Integer
         attribute :offset, Types::Integer
         attribute :signature, Types::FilledString

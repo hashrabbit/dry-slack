@@ -2,7 +2,7 @@
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       class AppMention < Dry::Struct
         transform_keys(&:to_sym)
 

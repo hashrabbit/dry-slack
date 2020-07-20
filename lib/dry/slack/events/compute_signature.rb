@@ -4,7 +4,7 @@ require 'openssl'
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       class ComputeSignature
         extend Dry::Initializer
 

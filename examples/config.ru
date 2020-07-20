@@ -7,10 +7,10 @@ class App
     req = Rack::Request.new(request)
     body = req.body.gets
     puts body
-    # challenge = Dry::Slack::Mentions::UrlVerification.new(JSON.parse(body))
+    # challenge = Dry::Slack::Events::UrlVerification.new(JSON.parse(body))
     # p challenge.to_rack
     # challenge.to_rack
-    event = Dry::Slack::Mentions::EventCallback.new(JSON.parse(body))
+    event = Dry::Slack::Events::EventCallback.new(JSON.parse(body))
     event.to_rack
   end
 end

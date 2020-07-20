@@ -4,7 +4,7 @@ require 'spec_helper'
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       RSpec.describe ParseRequest do
         let(:args) { [Time.now.to_i, 'sig', { text: 'foo' }.to_json] }
         let(:request) { Spec::RequestStub.new(*args) }

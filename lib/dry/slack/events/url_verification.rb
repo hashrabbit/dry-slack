@@ -2,8 +2,8 @@
 
 module Dry
   module Slack
-    module Mentions
-      class UrlVerification < EventStruct
+    module Events
+      class UrlVerification < BaseStruct
         attribute :type, Types::String.constrained(eql: 'url_verification')
         attribute :token, Types::FilledString
         attribute :challenge, Types::FilledString

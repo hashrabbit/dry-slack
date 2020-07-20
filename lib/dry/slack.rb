@@ -43,7 +43,7 @@ require 'dry/do_service'
 
 require 'dry/slack/blocks'
 require 'dry/slack/contracts'
-require 'dry/slack/mentions'
+require 'dry/slack/events'
 require 'dry/slack/payloads'
 require 'dry/slack/post_json'
 require 'dry/slack/publish_webhook'

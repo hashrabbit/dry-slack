@@ -4,7 +4,7 @@ require 'spec_helper'
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       RSpec.describe Handler do
         include Dry::Monads[:result]
 

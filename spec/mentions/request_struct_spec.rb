@@ -4,7 +4,7 @@ require 'spec_helper'
 
 module Dry
   module Slack
-    module Mentions
+    module Events
       RSpec.describe RequestStruct do
         let(:time) { Time.now.to_i }
         let(:body) { { text: 'foo' }.to_json }
