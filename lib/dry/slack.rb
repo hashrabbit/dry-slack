@@ -22,6 +22,12 @@ module Dry
       end
     end
 
+    class InvalidAppMention < Error
+      def initialize(*)
+        super('Invalid app_mention command')
+      end
+    end
+
     module Types
       include Dry.Types()
 
