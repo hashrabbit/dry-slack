@@ -37,12 +37,21 @@ module Dry
           end
         end
 
-        context 'with a Request object that fails #to_struct' do
+        context 'with a Request object containing an invalid attribute type' do
           let(:args) { [Time.now.to_i, :sig, { text: 'foo' }.to_json] }
 
           it 'returns Failure, wrapping a "Invalid Request" Error' do
             expect(result).to be_failure
             expect(result.failure.text).to eq 'Invalid Request'
+          end
+        end
+
+        context 'with a Request object containing a non-JSON body' do
+          let(:args) { [Time.now.to_i, 'sig', 'foo'] }
+
+          it 'returns Failure, wrapping a "Body not JSON" Error' do
+            expect(result).to be_failure
+            expect(result.failure.text).to match 'Body not JSON'
           end
         end
       end

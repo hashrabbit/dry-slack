@@ -12,7 +12,7 @@ module Dry
         def call(request)
           yield valid_method(request)
           yield valid_type(request.content_type)
-          to_struct(request).tee { |struct| valid_body(struct.to_h) }
+          to_struct(request).tee { |struct| valid_body(struct) }
         end
 
         private
