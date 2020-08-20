@@ -53,3 +53,5 @@ require 'dry/slack/events'
 require 'dry/slack/payloads'
 require 'dry/slack/post_json'
 require 'dry/slack/publish_webhook'
+
+require 'dry/slack/namespace'
