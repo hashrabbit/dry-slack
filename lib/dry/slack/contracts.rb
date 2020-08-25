@@ -16,5 +16,6 @@ require 'dry/slack/contracts/section'
 require 'dry/slack/contracts/context'
 require 'dry/slack/contracts/divider'
 require 'dry/slack/contracts/image_block'
+require 'dry/slack/contracts/header'
 
 require 'dry/slack/contracts/payload_basic'
