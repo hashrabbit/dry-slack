@@ -25,14 +25,15 @@ end
 
 require 'dry/slack/blocks/section'
 require 'dry/slack/blocks/divider'
+require 'dry/slack/blocks/header'
 require 'dry/slack/blocks/image_block'
 require 'dry/slack/blocks/context'
 
 module Dry
   module Slack
     module Types
-      MessageBlock = Blocks::Section | Blocks::Divider | Blocks::ImageBlock |
-                     Blocks::Context
+      MessageBlock = Blocks::Section | Blocks::Divider | Blocks::Context |
+                     Blocks::Header | Blocks::ImageBlock
     end
   end
 end

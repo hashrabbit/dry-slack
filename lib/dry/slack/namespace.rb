@@ -13,6 +13,7 @@ module Dry
         register(:context) { Dry::Slack::Blocks::Context }
         register(:date_picker) { Dry::Slack::Blocks::DatePicker }
         register(:divider) { Dry::Slack::Blocks::Divider }
+        register(:header) { Dry::Slack::Blocks::Header }
         register(:image) { Dry::Slack::Blocks::Image }
         register(:image_block) { Dry::Slack::Blocks::ImageBlock }
         register(:option) { Dry::Slack::Blocks::Option }
